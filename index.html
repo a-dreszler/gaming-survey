@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Preferences Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title" class="description">Gaming Preferences Survey Form</h1>
+  <p id="description" class="description"><em>Tell us about what you consider important in video games!</em></p>
+  <div>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label for="name" id="name-label">Name:<input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+        <label for="email" id="email-label">E-mail address:<input id="email" name="email" type="email" placeholder="Enter your e-mail address" required></label>
+        <label for="number" id="number-label">Age:<input id="number" name="age" type="number" min="8" max="120" placeholder="Enter your age"></label>
+        <label for="dropdown">Which of the following describes you best?
+          <select id="dropdown" name="living-status">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Unemployed</option>
+            <option value="3">Working full-time</option>
+            <option value="4">Working part-time</option>
+            <option value="5">Business owner</option>
+            <option value="6">On disability pension</option>
+            <option value="7">Retired</option>
+         </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>How many hours do you play per day by average?</p>
+        <label for="0h"> <input type="radio" id="0h" name="how-many-hrs" class="inline" value="0h" checked>0 h</label>
+        <label for="0-2h"> <input type="radio" id="0-2h" name="how-many-hrs" class="inline" value="0-2h">0-2 h</label>
+        <label for="2-4h"> <input type="radio" id="2-4h" name="how-many-hrs" class="inline" value="2-4h">2-4 h</label>
+        <label for="4-6h"> <input type="radio" id="4-6h" name="how-many-hrs" class="inline" value="4-6h">4-6 h</label>
+        <label for="6-8h"> <input type="radio" id="6-8h" name="how-many-hrs" class="inline" value="6-8h">6-8 h</label>
+        <label for="8+h"> <input type="radio" id="8+h" name="how-many-hrs" class="inline" value="8+h">I don't have a life lol</label>
+
+        <p>What are the most important aspects of a game for you?</p>
+
+        <label for="exploration"> <input type="checkbox" id="exploration" name="aspects" value="exploration" class="inline" checked> Exploration</label>
+        <label for="story"> <input type="checkbox" id="story" name="aspects" value="story" class="inline"> Story</label>
+        <label for="pvp"> <input type="checkbox" id="pvp" name="aspects" value="pvp" class="inline"> PvP</label>
+        <label for="graphics"> <input type="checkbox" id="graphics" name="aspects" value="graphics" class="inline"> Graphics</label>
+        <label for="strategy"> <input type="checkbox" id="strategy" name="aspects" value="strategy" class="inline"> Strategy</label>
+        <label for="cooperation"> <input type="checkbox" id="cooperation" name="aspects" value="cooperation" class="inline"> Cooperation</label>
+        <label for="games-list">What are your favorite games?<textarea id="games-list" name="games-list" rows="4" placeholder="Goat simulator, ..."></textarea>
+      </fieldset>
+      <button type="submit" id="submit"><strong>Submit</strong></button>
+      </form>
+    </div>
+  </body>
+</html>
